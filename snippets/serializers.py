@@ -16,6 +16,7 @@ class SnippetSerializer(serializers.Serializer):
         """
         return Snippet.objects.create(**validated_data)
 
+
     def update(self, instance, validated_data):
         """
         Update and return an existing `Snippet` instance, given the validated data.
